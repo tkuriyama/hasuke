@@ -1,6 +1,6 @@
 module Main where
 
-import Lib
+import Tabs.Tabs
 
 main :: IO ()
-main = someFunc
+main = pure ()
