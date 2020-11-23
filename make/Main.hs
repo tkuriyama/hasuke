@@ -1,6 +1,6 @@
 module Main where
 
-import Tabs.Tabs
+import qualified Convert.Main as C
 
 main :: IO ()
-main = pure ()
+main = C.main

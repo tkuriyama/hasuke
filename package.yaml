@@ -20,29 +20,55 @@ extra-source-files:
 description:         https://github.com/tkuriyama/hasuke
 
 dependencies:
-- base >= 4.7 && < 5
+  - base >= 4.7 && < 5
+  - text
+  - aeson
 
 library:
-  source-dirs: src
+  source-dirs:
+    - src
+  default-extensions:
+    - OverloadedStrings
+    - DeriveGeneric
+    - ExtendedDefaultRules
+  dependencies:
+    - lucid
 
 executables:
   hasuke-make:
     main:                Main.hs
-    source-dirs:         make
+    source-dirs:         make/
+    default-extensions:
+      - OverloadedStrings
     ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+      - -O2
+      - -Wall
+      - -Wcompat
+      - -Wincomplete-record-updates
+      - -Wincomplete-uni-patterns
+      - -Wredundant-constraints
     dependencies:
-    - hasuke
+      - hasuke
+      - filepath
 
 tests:
   hasuke-test:
     main:                Spec.hs
     source-dirs:         test
+    default-extensions:
+      - OverloadedStrings
     ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
+      - -threaded
+      - -rtsopts
+      - -with-rtsopts=-N
+      - -O2
+      - -Wall
+      - -Wcompat
+      - -Wincomplete-record-updates
+      - -Wincomplete-uni-patterns
+      - -Wredundant-constraints
     dependencies:
     - hasuke

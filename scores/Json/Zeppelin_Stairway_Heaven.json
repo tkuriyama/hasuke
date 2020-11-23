@@ -1,0 +1,21 @@
+{ "title": "Stairway to Heaven",
+  "attributions": [
+      "Led Zeppelin",
+      "TenThumbs Productions https://www.youtube.com/watch?v=k0MRhqqgwMc"
+  ],
+  "sections": [
+      { "text": "Chords: Am, E+, C, D, F, G" },
+      { "tempo": null,
+	"timeNumerator": 4,
+	"timeDenominator": 4,
+	"bars": [
+	    { "barChord": "Am",
+	      "a": [[0, 1, null], 1, 1, [0, 1, null]],
+	      "e": [1, 1, [0, 1, null], 1],
+	      "c": [1, [0, 1, null], 1, 1],
+	      "g": [[2, 1, null], 1, 1, 1]
+	    }
+	]
+      }
+  ]
+}
