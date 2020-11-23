@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: d03a7f4a2005ac98edb12bba7cb618185c8ab546356ec238f1bcb7c1fe3dfd98
+-- hash: f40396611f0c94783110bbd8bdc6adbbfe91eee3ed0a3e231722ed31b5e2ead0
 
 name:           hasuke
 version:        0.1.0.0
@@ -28,6 +28,7 @@ source-repository head
 library
   exposed-modules:
       Ukulele.Compilers.ToHtml
+      Ukulele.Compilers.ToMidi
       Ukulele.Ukulele
   other-modules:
       Paths_hasuke
@@ -35,7 +36,8 @@ library
       src
   default-extensions: OverloadedStrings DeriveGeneric ExtendedDefaultRules
   build-depends:
-      aeson
+      Euterpea
+    , aeson
     , base >=4.7 && <5
     , lucid
     , text
@@ -51,7 +53,8 @@ executable hasuke-make
   default-extensions: OverloadedStrings
   ghc-options: -threaded -rtsopts -with-rtsopts=-N -O2 -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints
   build-depends:
-      aeson
+      Euterpea
+    , aeson
     , base >=4.7 && <5
     , filepath
     , hasuke
@@ -68,7 +71,8 @@ test-suite hasuke-test
   default-extensions: OverloadedStrings
   ghc-options: -threaded -rtsopts -with-rtsopts=-N -O2 -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints
   build-depends:
-      aeson
+      Euterpea
+    , aeson
     , base >=4.7 && <5
     , hasuke
     , text
