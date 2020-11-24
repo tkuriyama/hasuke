@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: f40396611f0c94783110bbd8bdc6adbbfe91eee3ed0a3e231722ed31b5e2ead0
+-- hash: 17e58d90a667d157093bd9522217dc47d94c74e787a411f890a73212c03ec14d
 
 name:           hasuke
 version:        0.1.0.0
@@ -36,8 +36,7 @@ library
       src
   default-extensions: OverloadedStrings DeriveGeneric ExtendedDefaultRules
   build-depends:
-      Euterpea
-    , aeson
+      aeson
     , base >=4.7 && <5
     , lucid
     , text
@@ -53,8 +52,7 @@ executable hasuke-make
   default-extensions: OverloadedStrings
   ghc-options: -threaded -rtsopts -with-rtsopts=-N -O2 -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints
   build-depends:
-      Euterpea
-    , aeson
+      aeson
     , base >=4.7 && <5
     , filepath
     , hasuke
@@ -71,8 +69,7 @@ test-suite hasuke-test
   default-extensions: OverloadedStrings
   ghc-options: -threaded -rtsopts -with-rtsopts=-N -O2 -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints
   build-depends:
-      Euterpea
-    , aeson
+      aeson
     , base >=4.7 && <5
     , hasuke
     , text
