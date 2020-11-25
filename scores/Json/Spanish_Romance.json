@@ -1,0 +1,38 @@
+{ "title": "Spanish Romance",
+  "attributions": [
+      "https://tabs.ultimate-guitar.com/tab/misc-traditional/spanish-romance-tabs-76636"
+  ],
+  "sections": [
+      { "text": "Chords: Em Am B B7 E A7 Badd9" },
+      { "tempo": null,
+	"timeNumerator": 9,
+	"timeDenominator": 8,
+	"bars": [
+	    { "barChord": "Em",
+	      "a": [[7, 1, null], 2, [7, 1, null], 2, [7, 1, null], 2],
+	      "e": [1, [0, 1, null], 2, [0, 1, null], 2, [0, 1, null], 1],
+	      "c": [2, [0, 1, null], 2, [0, 1, null], 2, [0, 1, null]],
+	      "g": [9]
+	    },
+	    { "barChord": "Em",
+	      "a": [[7, 1, null], 2, [5, 1, null], 2, [3, 1, null], 2],
+	      "e": [1, [0, 1, null], 2, [0, 1, null], 2, [0, 1, null], 1],
+	      "c": [2, [0, 1, null], 2, [0, 1, null], 2, [0, 1, null]],
+	      "g": [9]
+	    },
+	    { "barChord": "Em",
+	      "a": [[3, 1, null], 2, [2, 1, null], 2, [0, 1, null], 2],
+	      "e": [1, [0, 1, null], 2, [0, 1, null], 2, [0, 1, null], 1],
+	      "c": [2, [0, 1, null], 2, [0, 1, null], 2, [0, 1, null]],
+	      "g": [9]
+	    }, 
+	    { "barChord": "Em",
+	      "a": [[0, 1, null], 2, [3, 1, null], 2, [7, 1, null], 2],
+	      "e": [1, [0, 1, null], 2, [0, 1, null], 2, [0, 1, null], 1],
+	      "c": [2, [0, 1, null], 2, [0, 1, null], 2, [0, 1, null]],
+	      "g": [9]
+	    }
+	]
+      }
+  ]
+}
