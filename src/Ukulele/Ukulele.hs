@@ -30,15 +30,23 @@ instance FromJSON Score where
 
 data Section
   = TextSection { text :: T.Text }
-  | ChordSection { chord :: Chord
-                 , lyrics :: T.Text
-                 }
+  | ChordSection { pairs :: [ChordPairs]}
   | TabSection { tempo :: Maybe Tempo
-               , timeNumerator :: Maybe Int
+               , timeNumerator :: Int
                , timeDenominator :: Maybe Int
                , bars :: [Bar]
                }
   deriving (Generic, Show)
+
+type ChordPairs = [ChordPair]
+data ChordPair = ChordPair Chord T.Text
+  deriving (Generic, Show)
+
+instance ToJSON ChordPair where
+  toEncoding = genericToEncoding customOptions
+
+instance FromJSON ChordPair where
+  parseJSON = genericParseJSON customOptions
 
 type Tempo = Int
 type Time = Rational
@@ -82,8 +90,6 @@ instance ToJSON Note where
 
 instance FromJSON Note where
   parseJSON = genericParseJSON customOptions
-
---------------------------------------------------------------------------------
 
 data Modifier
   = Slide

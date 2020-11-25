@@ -1,0 +1,22 @@
+
+.body {
+    font-family: Georgia, serif;
+    width: 800px;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.attributions {
+    font-size: 16px;
+}
+
+.sections {
+    font-family: Consolas, Monaco, monospace;
+    font-size: 20px;
+}
+
+.tabPage {
+    page-break-after: always;
+} 
