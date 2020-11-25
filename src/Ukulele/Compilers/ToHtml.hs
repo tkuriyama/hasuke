@@ -16,7 +16,7 @@ data PrintConfig
                 }
 
 configs :: PrintConfig
-configs = PrintConfig 18 6 3 "."
+configs = PrintConfig 18 7 3 "."
 
 --------------------------------------------------------------------------------
 scoreToFile :: FilePath -> Score -> IO ()
@@ -32,7 +32,6 @@ scoreToHtml s =
   html_ $ do
     body_ [class_ "body"] $
       showHeader (title s) (attributions s) <>
-      br_ [] <>
       showSections (sections s)
 
 showHeader :: T.Text -> Maybe [T.Text] -> Html ()
@@ -47,7 +46,7 @@ showHeader t mAttrs =
 showSections :: [Section] -> Html ()
 showSections xs =
   div_ [class_ "sections"] $ do
-  mapM_ f xs
+  mapM_ (\x -> br_ [] <> f x) xs
   where f x = case x of
                 TextSection t -> showText t
                 ChordSection ps -> showChords ps
