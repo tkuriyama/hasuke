@@ -126,7 +126,8 @@ showNote noteLen (Rest dur) =
 showNote noteLen (Note fret dur mMod) = case mMod of
   Nothing -> note 0
   (Just Hammer) -> "h" <> note 1
-  (Just Slide) -> "/" <> note 1
+  (Just SlideUp) -> "/" <> note 1
+  (Just SlideDown) -> "\\" <> note 1
   where
     fillChar = if dur == 1 then (separator configs) else "="
     note offset = fill (packs fret) fillChar (noteLen * dur - offset)

@@ -92,7 +92,8 @@ instance FromJSON Note where
   parseJSON = genericParseJSON customOptions
 
 data Modifier
-  = Slide
+  = SlideUp
+  | SlideDown
   | Hammer
   deriving (Generic, Show)
 
