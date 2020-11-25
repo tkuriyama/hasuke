@@ -1,4 +1,4 @@
-{ "title": "Stairway to Heaven",
+{ "title": "Stairway to Heaven Intro",
   "attributions": [
       "Led Zeppelin",
       "TenThumbs Productions https://www.youtube.com/watch?v=k0MRhqqgwMc"
@@ -25,7 +25,7 @@
 	      "a": [[3, 1, null], 2, [3, 1, null]],
 	      "e": [1, [0, 1, null], 2],
 	      "c": [2, [0, 1, null], 1],
-	      "g": [[0, 1, null], 2, [2, 1, null]]
+	      "g": [[0, 1, null], 3]
 	    },
 	    { "barChord": "D",
 	      "a": [[0, 1, null], 2, [0, 1, null]],
@@ -54,7 +54,151 @@
 	    { "barChord": "Am",
 	      "a": [1, [0, 1, null], 2],
 	      "e": [4],
-	      "c": [2, [5, 1, "Slide"], [4, 1, null]],
+	      "c": [2, [5, 1, "SlideUp"], [4, 1, null]],
+	      "g": [4]
+	    },
+	    { "barChord": "Am",
+	      "a": [[0, 1, null], 2, [0, 1, null]],
+	      "e": [2, [0, 1, null], 1],
+	      "c": [1, [0, 1, null], 2],
+	      "g": [[2, 1, null], 3]
+	    },
+	    { "barChord": "E+",
+	      "a": [[2, 1, null], 2, [0, 1, null]],
+	      "e": [1, [0, 1, null], 2],
+	      "c": [2, [0, 1, null], 1],
+	      "g": [[1, 1, null], 3]
+	    },
+	    { "barChord": "C",
+	      "a": [[3, 1, null], 2, [3, 1, null]],
+	      "e": [1, [0, 1, null], 2],
+	      "c": [2, [0, 1, null], 1],
+	      "g": [[0, 1, null], 3]
+	    },
+	    { "barChord": "D",
+	      "a": [[0, 1, null], 2, [0, 1, null]],
+	      "e": [1, [2, 1, null], 2],
+	      "c": [2, [2, 1, null], 1],
+	      "g": [[2, 1, null], 3]
+	    },
+	    { "barChord": "F",
+	      "a": [[0, 1, null], 3],
+	      "e": [1, [1, 1, null], 1, [1, 1, null]],
+	      "c": [2, [0, 1, null], 1],
+	      "g": [[2, 1, null], 3]
+	    },
+	    { "barChord": "F",
+	      "a": [1, [0, 1, null], 2],
+	      "e": [2, [1, 1, null], 1],
+	      "c": [3, [0, 1, null]],
+	      "g": [4]
+	    },
+	    { "barChord": "G -> Am",
+	      "a": [[2, 1, null], [0, 1, null], [0, 1, null], 1],
+	      "e": [[3, 1, null], [0, 1, null], [0, 1, null], 1],
+	      "c": [[2, 1, null], [0, 1, null], [0, 1, null], 1],
+	      "g": [[0, 1, null], [2, 1, null], [2, 1, null], 1]
+	    },
+	    { "barChord": "Am",
+	      "a": [1, 1, [0, 1, null], [2, 1, null]],
+	      "e": [4],
+	      "c": [4],
+	      "g": [4]
+	    },
+	    { "barChord": "C",
+	      "a": [[3, 1, null], 2, [3, 1, null]],
+	      "e": [2, [0, 1, null], 1],
+	      "c": [1, [0, 1, null], 2],
+	      "g": [[0, 1, null], 3]
+	    },
+	    { "barChord": "D",
+	      "a": [[0, 1, null], 2, [0, 1, null]],
+	      "e": [1, [2, 1, null], 2],
+	      "c": [2, [2, 1, null], 1],
+	      "g": [[2, 1, null], 3]
+	    },
+	    { "barChord": "F",
+	      "a": [[0, 1, null], 2, [0, 1, null]],
+	      "e": [1, [1, 1, null], 2],
+	      "c": [2, [0, 1, null], 1],
+	      "g": [[2, 1, null], 3]
+	    },
+	    { "barChord": "Am",
+	      "a": [2, [0, 1, null], [2, 1, null]],
+	      "e": [1, [0, 1, null], 2],
+	      "c": [4],
+	      "g": [[2, 1, "Hammer"], 3]
+	    },
+	    { "barChord": "C",
+	      "a": [[3, 1, null], 2, [3, 1, null]],
+	      "e": [2, [0, 1, null], 1],
+	      "c": [1, [0, 1, null], 2],
+	      "g": [[0, 1, null], 3]
+	    },
+	    { "barChord": "G",
+	      "a": [[2, 1, null], 2, [2, 1, null]],
+	      "e": [1, [3, 1, null], 2],
+	      "c": [2, [2, 1, null], 1],
+	      "g": [[0, 1, null], 3]
+	    },
+	    { "barChord": "D",
+	      "a": [1, [0, 1, null], [0, 1, null], 1],
+	      "e": [[2, 1, "SlideDown"], [2, 1, null], [2, 1, null], 1],
+	      "c": [1, [2, 1, null], [2, 1, null], 1],
+	      "g": [1, [2, 1, null], [2, 1, null], 1]
+	    },
+	    { "barChord": "D",
+	      "a": [2, [0, 1, null], [2, 1, null]],
+	      "e": [4],
+	      "c": [4],
+	      "g": [4]
+	    },
+	    { "barChord": "C",
+	      "a": [[3, 1, null], 2, [3, 1, null]],
+	      "e": [2, [0, 1, null], 1],
+	      "c": [1, [0, 1, null], 2],
+	      "g": [[0, 1, null], 3]
+	    },
+	    { "barChord": "D",
+	      "a": [[0, 1, null], 2, [0, 1, null]],
+	      "e": [1, [2, 1, null], 2],
+	      "c": [2, [2, 1, null], 1],
+	      "g": [[2, 1, null], 3]
+	    },
+	    { "barChord": "F",
+	      "a": [[0, 1, null], 2, [0, 1, null]],
+	      "e": [1, [1, 1, null], 2],
+	      "c": [2, [0, 1, null], 1],
+	      "g": [[2, 1, null], 3]
+	    },
+	    { "barChord": "Am",
+	      "a": [2, [0, 1, null], [2, 1, null]],
+	      "e": [1, [0, 1, null], 2],
+	      "c": [4],
+	      "g": [[2, 1, "Hammer"], 3]
+	    },
+	    { "barChord": "C",
+	      "a": [[3, 1, null], 2, [3, 1, null]],
+	      "e": [2, [0, 1, null], 1],
+	      "c": [1, [0, 1, null], 2],
+	      "g": [[0, 1, null], 3]
+	    },
+	    { "barChord": "D",
+	      "a": [[0, 1, null], 2, [0, 1, null]],
+	      "e": [1, [2, 1, null], 2],
+	      "c": [2, [2, 1, null], 1],
+	      "g": [[2, 1, null], 3]
+	    },
+	    { "barChord": "Am -> F",
+	      "a": [[0, 1, null], [0, 1, null], [0, 1, null], 1],
+	      "e": [[0, 1, null], [1, 1, null], [1, 1, null], 1],
+	      "c": [[0, 1, null], [0, 1, null], [0, 1, null], 1],
+	      "g": [[2, 1, null], [2, 1, null], [1, 1, null], 1]
+	    },
+	    { "barChord": "",
+	      "a": [4],
+	      "e": [4],
+	      "c": [4],
 	      "g": [4]
 	    }
 	]
