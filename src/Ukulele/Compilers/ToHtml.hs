@@ -12,10 +12,11 @@ data PrintConfig
   = PrintConfig { maxNotesPerRow :: Int -- horizontal max
                 , maxRowsPerPage :: Int  -- vertical max
                 , charsPerNote :: Int
+                , separator :: T.Text
                 }
 
 configs :: PrintConfig
-configs = PrintConfig 16 6 4
+configs = PrintConfig 18 6 3 "."
 
 --------------------------------------------------------------------------------
 scoreToFile :: FilePath -> Score -> IO ()
@@ -111,8 +112,8 @@ joinChords beats xs = foldl f "" xs
   where
     n = (beats * (charsPerNote configs) + 1)
     f acc mChord = case mChord of
-                     Nothing -> acc <> fill "" "-" n
-                     Just chord -> acc <> fill chord "-" n
+                     Nothing -> acc <> fill "" "_" n
+                     Just chord -> acc <> fill chord "_" n
 
 joinNotes :: [[Note]] -> T.Text
 joinNotes nss =
@@ -121,13 +122,14 @@ joinNotes nss =
     noteLen = charsPerNote configs
 
 showNote :: Int -> Note -> T.Text
-showNote noteLen (Rest dur) = T.replicate (noteLen * dur) "-"
+showNote noteLen (Rest dur) =
+  T.replicate (noteLen * dur) $ separator configs
 showNote noteLen (Note fret dur mMod) = case mMod of
   Nothing -> note 0
   (Just Hammer) -> "h" <> note 1
   (Just Slide) -> "/" <> note 1
   where
-    fillChar = if dur == 1 then "-" else "="
+    fillChar = if dur == 1 then (separator configs) else "="
     note offset = fill (packs fret) fillChar (noteLen * dur - offset)
 
 fill :: T.Text -> T.Text -> Int -> T.Text
