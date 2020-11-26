@@ -95,6 +95,7 @@ data Modifier
   = SlideUp
   | SlideDown
   | Hammer
+  | Mordent
   deriving (Generic, Show)
 
 instance ToJSON Modifier where

@@ -2,6 +2,7 @@ module Ukulele.Compilers.ToHtml where
 
 import qualified Data.Text as T
 
+import Data.Maybe (fromMaybe)
 import Lucid
 
 import Ukulele.Ukulele
@@ -13,10 +14,11 @@ data PrintConfig
                 , maxRowsPerPage :: Int  -- vertical max
                 , charsPerNote :: Int
                 , separator :: T.Text
+                , restChar :: T.Text
                 }
 
 configs :: PrintConfig
-configs = PrintConfig 18 7 3 "."
+configs = PrintConfig 18 7 3 "&nbsp;" ".&nbsp;&nbsp;"
 
 --------------------------------------------------------------------------------
 scoreToFile :: FilePath -> Score -> IO ()
@@ -92,11 +94,11 @@ showRow :: Int -> Bars -> Html ()
 showRow beats bs =
   div_ [] $
   br_ [] <> 
-  toHtml chords <> br_ [] <>
-  toHtml as <> br_ [] <>
-  toHtml es <> br_ [] <>
-  toHtml cs <> br_ [] <>
-  toHtml gs <> br_ []
+  toHtmlRaw chords <> br_ [] <>
+  toHtmlRaw as <> br_ [] <>
+  toHtmlRaw es <> br_ [] <>
+  toHtmlRaw cs <> br_ [] <>
+  toHtmlRaw gs <> br_ []
   where
     (chords, as, es, cs, gs) = joinBars beats bs
 
@@ -107,12 +109,9 @@ joinBars beats bs = (chords, as, es, cs, gs)
         (as, es, cs, gs) = (f a, f e, f c, f g)
 
 joinChords :: Int -> [Maybe Chord] -> T.Text
-joinChords beats xs = foldl f "" xs
+joinChords beats = T.intercalate "_" .  map f
   where
-    n = (beats * (charsPerNote configs) + 1)
-    f acc mChord = case mChord of
-                     Nothing -> acc <> fill "" "_" n
-                     Just chord -> acc <> fill chord "_" n
+    f mChord = fill (fromMaybe "" mChord) "_" (beats * charsPerNote configs)
 
 joinNotes :: [[Note]] -> T.Text
 joinNotes nss =
@@ -122,12 +121,13 @@ joinNotes nss =
 
 showNote :: Int -> Note -> T.Text
 showNote noteLen (Rest dur) =
-  T.replicate (noteLen * dur) $ separator configs
+  T.replicate dur (restChar configs)
 showNote noteLen (Note fret dur mMod) = case mMod of
   Nothing -> note 0
   (Just Hammer) -> "h" <> note 1
   (Just SlideUp) -> "/" <> note 1
   (Just SlideDown) -> "\\" <> note 1
+  (Just Mordent) -> "m" <> note 1 
   where
     fillChar = if dur == 1 then (separator configs) else "="
     note offset = fill (packs fret) fillChar (noteLen * dur - offset)
