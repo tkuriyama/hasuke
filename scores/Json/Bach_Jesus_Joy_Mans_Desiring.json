@@ -1,0 +1,158 @@
+{ "title": "Jesus, Joy of Man's Desiring",
+  "attributions": [
+      "J.S. Bach",
+      "https://www.youtube.com/watch?v=OrO6luLqw-U"
+  ],
+  "sections": [
+      { "tempo": null,
+	"timeNumerator": 9,
+	"timeDenominator": 8,
+	"bars": [
+	    { "barChord": "",
+	      "a": [7, [0, 1, null], 1],
+	      "e": [3, [0, 1, null], [3, 1, null], [1, 1, null], [1, 1, null], 1, [3, 1, null]],
+	      "c": [1, [0, 1, null], [2, 1, null], [0, 1, null], 5],
+	      "g": [6, [2, 1, null], 2]
+	    },
+	    { "barChord": "",
+	      "a": [1, [3, 1, null], [2, 1, null], [3, 1, null], 5],
+	      "e": [[3, 1, null], 3, [3, 1, null], [0, 1, null], 2, [0, 1, null]],
+	      "c": [[0, 1, null], 2, [0, 1, null], 2, [0, 1, null], [2, 1, null], 1],
+	      "g": [6, [0, 1, null], 2]
+	    },
+	    { "barChord": "",
+	      "a": [2, [0, 1, null], 6],
+	      "e": [[1, 1, null], [3, 1, null], 1, [3, 1, null], [1, 1, null], [0, 1, null], 1, [0, 1, null], 1],
+	      "c": [[2, 1, null], 2, [0, 1, null], 2, [2, 1, null], 1, [0, 1, null]],
+	      "g": [6, [4, 1, null], 2]
+	    },
+	    { "barChord": "",
+	      "a": [9],
+	      "e": [6, [1, 1, null], [0, 1, null], 1],
+	      "c": [1, [0, 1, null], [2, 1, null], 2, [2, 1, null], [2, 1, null], 1, [2, 1, null]],
+	      "g": [[4, 1, null], 2, [0, 1, null], [4, 1, null], 4]
+	    },
+	    { "barChord": "",
+	      "a": [7, [0, 1, null], 1],
+	      "e": [[0, 1, null], 2, [0, 1, null], [3, 1, null], [1, 1, null], [1, 1, null], 1, [3, 1, null]],
+	      "c": [[0, 1, null], [0, 1, null], [2, 1, null], [0, 1, null], 5],
+	      "g": [6, [2, 1, null], 2]
+	    },
+	    { "barChord": "",
+	      "a": [1, [3, 1, null], [2, 1, null], [3, 1, null], 5],
+	      "e": [[3, 1, null], 3, [3, 1, null], [0, 1, null], 2, [0, 1, null]],
+	      "c": [[0, 1, null], 2, [0, 1, null], 2, [0, 1, null], [2, 1, null], 1],
+	      "g": [6, [0, 1, null], 2]
+	    },
+	    { "barChord": "",
+	      "a": [9],
+	      "e": [1, [3, 1, null], [1, 1, null], [0, 1, null], 5],
+	      "c": [4, [2, 1, null], [0, 1, null], 1, [0, 1, null], 1],
+	      "g": [[2, 1, null], 2, [0, 1, null], 2, [0, 1, null], 1, [4, 1, null]]
+	    },
+	    { "barChord": "",
+	      "a": [3, [3, 1, null], 5],
+	      "e": [1, [0, 1, null], [3, 1, null], 1, [3, 1, null], [0, 1, null], 1, [0, 1, null], [3, 1, null]],
+	      "c": [[0, 1, null], 5, [0, 1, null], 2],
+	      "g": [[0, 1, null], 5, [0, 1, null], 2]
+	    },
+	    { "barChord": "",
+	      "a": [9],
+	      "e": [[0, 1, null], 5, [1, 1, null], 2],
+	      "c": [[0, 1, null], 1, [0, 1, null], [0, 1, null], 1, [0, 1, null], 2, [0, 1, null]],
+	      "g": [6, [2, 1, null], 2]
+	    },
+	    { "barChord": "",
+	      "a": [9],
+	      "e": [[3, 1, null], 5, [3, 1, null], 2],
+	      "c": [2, [2, 1, null], [2, 1, null], 1, [2, 1, null], 2],
+	      "g": [[4, 1, null], 5, [4, 1, null], 2]
+	    },
+	    { "barChord": "",
+	      "a": [9],
+	      "e": [7, [1, 1, null], [0, 1, null]],
+	      "c": [[2, 1, null], 2, [2, 1, null], [2, 1, null], [0, 1, null], [2, 1, null], 2],
+	      "g": [[4, 1, null], 2, [4, 1, null], 2, [0, 1, null], 2]
+	    },
+	    { "barChord": "",
+	      "a": [9],
+	      "e": [[1, 1, null], 5, [1, 1, null], [0, 1, null], 1],
+	      "c": [1, [2, 1, null], 3, [2, 1, null], 2, [2, 1, null]],
+	      "g": [[0, 1, null], 1, [4, 1, null], [0, 1, null], [4, 1, null], 1, [0, 1, null], 2]
+	    },
+	    { "barChord": "",
+	      "a": [9],
+	      "e": [[0, 1, null], 5, [1, 1, null], 2],
+	      "c": [[0, 1, null], 1, [0, 1, null], [0, 1, null], 1, [0, 1, null], 2, [0, 1, null]],
+	      "g": [6, [2, 1, null], 2]
+	    },
+	    { "barChord": "",
+	      "a": [9],
+	      "e": [[3, 1, null], 5, [0, 1, null], 2],
+	      "c": [2, [0, 1, null],[0, 1, null], 1, [0, 1, null], 3],
+	      "g": [[5, 1, null], 5, [0, 1, null], 2]
+	    },
+	    { "barChord": "",
+	      "a": [9],
+	      "e": [2, [0, 1, "Mordent"], [0, 1, null], 5],
+	      "c": [[2, 1, null], 2, [0, 1, null], 2, [2, 1, null], 2],
+	      "g": [[5, 1, null], 5, [5, 1, null], 2]
+	    }, 
+	    { "barChord": "",
+	      "a": [7, [0, 1, null], 1],
+	      "e": [1, [0, 1, null], 1, [0, 1, null], [3, 1, null], [1, 1, null], [1, 1, null], 1, [3, 1, null]],
+	      "c": [[0, 1, null], 1, [2, 1, null], [0, 1, null], 5],
+	      "g": [[0, 1, null], 5, [2, 1, null], 2]
+	    },
+	    { "barChord": "",
+	      "a": [1, [3, 1, null], [2, 1, null], [3, 1, null], 5],
+	      "e": [[3, 1, null], 2, [0, 1, null], [3, 1, null], [0, 1, null], 2, [0, 1, null]],
+	      "c": [[0, 1, null], 5, [0, 1, null], [2, 1, null], 1],
+	      "g": [6, [0, 1, null], 2]
+	    },
+	    { "barChord": "",
+	      "a": [2, [0, 1, null], 6],
+	      "e": [[1, 1, null], [3, 1, null], 1, [3, 1, null], [1, 1, null], [0, 1, null], 1, [0, 1, null], 1],
+	      "c": [[2, 1, null], 2, [0, 1, null], 2, [2, 1, null], 1, [0, 1, null]],
+	      "g": [6, [4, 1, null], 2]
+	    }, 
+	    { "barChord": "",
+	      "a": [9],
+	      "e": [6, [1, 1, null], [0, 1, null], 1],
+	      "c": [1, [0, 1, null], [2, 1, null], 2, [2, 1, null], [2, 1, null], 1, [2, 1, null]],
+	      "g": [[4, 1, null], 2, [0, 1, null], [4, 1, null], 4]
+	    },
+	    { "barChord": "",
+	      "a": [7, [0, 1, null], 1],
+	      "e": [[0, 1, null], 2, [0, 1, null], [3, 1, null], [1, 1, null], [1, 1, null], 1, [3, 1, null]],
+	      "c": [[0, 1, null], [0, 1, null], [2, 1, null], [0, 1, null], 5],
+	      "g": [6, [2, 1, null], 2]
+	    },
+	    { "barChord": "",
+	      "a": [1, [3, 1, null], [2, 1, null], [3, 1, null], 5],
+	      "e": [[3, 1, null], 2, [0, 1, null], [3, 1, null], [0, 1, null], 2, [0, 1, null]],
+	      "c": [[0, 1, null], 5, [0, 1, null], [2, 1, null], 1],
+	      "g": [6, [0, 1, null], 2]
+	    },
+	    { "barChord": "",
+	      "a": [9],
+	      "e": [1, [3, 1, null], [1, 1, null], [0, 1, null], 5],
+	      "c": [4, [2, 1, null], [0, 1, null], 1, [0, 1, null], 1],
+	      "g": [[2, 1, null], 2, [0, 1, null], 2, [0, 1, null], 1, [4, 1, null]]
+	    },
+	    { "barChord": "",
+	      "a": [3, [3, 1, null], 5],
+	      "e": [1, [0, 1, null], [3, 1, null], 1, [3, 1, null], [0, 1, null], 1, [0, 1, null], [3, 1, null]],
+	      "c": [[0, 1, null], 5, [0, 1, null], 2],
+	      "g": [[0, 1, null], 8]
+	    },
+	    { "barChord": "",
+	      "a": [[3, 1, null], 8],
+	      "e": [9],
+	      "c": [9],
+	      "g": [[0, 1, null], 8]
+	    }
+	]
+      }
+  ]
+}
