@@ -120,7 +120,7 @@ joinNotes nss =
     noteLen = charsPerNote configs
 
 showNote :: Int -> Note -> T.Text
-showNote noteLen (Rest dur) =
+showNote _ (Rest dur) =
   T.replicate dur (restChar configs)
 showNote noteLen (Note fret dur mMod) = case mMod of
   Nothing -> note 0
