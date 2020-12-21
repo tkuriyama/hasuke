@@ -35,7 +35,7 @@ See the [scores](https://github.com/tkuriyama/hasuke/tree/master/scores) directo
 A noteworthy dependency for generating Midi files is the [Euterpea](http://www.euterpea.com/) library for defining music in Haskell.
 
 * [official docs](http://www.euterpea.com/)
-* [some installation and usage examples]((https://github.com/tkuriyama/hsom)
+* [some installation and usage examples](https://github.com/tkuriyama/hsom)
 
 
 As of this writing, Euterpea does not officially support installation via Stack. See the `stack.yaml` for a configuration that currently works on Linux (Ubuntu). The configuration also works on MacOS Catalina, and should work on Big Sur eventually -- again at the time of this writing in late 2020, Haskell's interface to the Core Midi on Big Sur appears to be broken.
