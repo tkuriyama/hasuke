@@ -7,6 +7,7 @@ import           System.Environment (getArgs)
 import           System.FilePath
 
 import Ukulele.Compilers.ToHtml as ToHtml
+import Ukulele.Compilers.ToMidi as ToMidi
 
 --------------------------------------------------------------------------------
 
@@ -26,7 +27,7 @@ convert :: FilePath -> IO ()
 convert fpath = do
   case takeExtension fpath of
     ".tab" -> pure ()
-    ".json" -> jsonToHtml fpath >> pure ()
+    ".json" -> jsonToHtml fpath >> jsonToMidi fpath >> pure ()
     _ -> putStrLn "Input file has invalid extension" >> pure ()
 
 jsonToHtml :: FilePath -> IO ()
@@ -40,4 +41,16 @@ jsonToHtml fpath = do
 
 htmlPath :: FilePath -> FilePath
 htmlPath fpath = dropExtension fpath <.> "html"
+
+jsonToMidi :: FilePath -> IO ()
+jsonToMidi fpath = do
+  result <- eitherDecodeFileStrict fpath
+  case result of
+    Left err ->
+      putStrLn err >> pure ()
+    Right score ->
+      ToMidi.scoreToMidi (midiPath fpath) score >> pure ()
+
+midiPath :: FilePath -> FilePath
+midiPath fpath = dropExtension fpath <.> "midi"
 
