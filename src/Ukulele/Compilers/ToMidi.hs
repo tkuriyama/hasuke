@@ -9,24 +9,29 @@ import            Ukulele.Ukulele as Uke
 
 --------------------------------------------------------------------------------
 
+type Tuning = (Int, Int, Int, Int)
+
+lowG :: Tuning
+lowG = (69, 64, 60, 55)
+
 scoreToMidi :: FilePath -> Score -> IO ()
 scoreToMidi fpath (Score _ _ xs) =
-  writeMidi fpath $ line $ map interpret xs
+  writeMidi fpath $ line $ map (interpret lowG) xs
 
-interpret :: Section -> Music (Pitch, Volume)
+interpret :: Tuning -> Section -> Music (Pitch, Volume)
 interpret s = case s of
-  TextSection _ -> addVolume 0 $ rest 0
-  ChordSection _ -> addVolume 0 $ rest 0
-  TabSection t num denom xs -> interpretTab t num denom xs
+  TextSection _ -> addVolume 0 $ rest 0  -- skip text sections
+  ChordSection _ -> addVolume 0 $ rest 0 -- not (yet) implemented
+  TabSection t num denom xs -> interpretTab tuning t num denom xs
 
 --------------------------------------------------------------------------------
 
-interpretTab :: Maybe Uke.Tempo -> Int -> Maybe Int -> [Uke.Bar] ->
+interpretTab :: Tuning -> Maybe Uke.Tempo -> Int -> Maybe Int -> [Uke.Bar] ->
                 Music (Pitch, Volume)
-interpretTab mt _ md xs =
+interpretTab tuning mt _ md xs =
   instrument AcousticGuitarNylon $
   Euterpea.tempo t' $
-  line $ map (interpretBar time) xs
+  line $ map (interpretBar tuning time) xs
   where
     t' = case mt of
            Just t -> (time / qn) * ((toInteger t) % 120)
@@ -35,11 +40,12 @@ interpretTab mt _ md xs =
               Just denom -> 1 % (toInteger denom)
               Nothing -> 1 % 4
 
-interpretBar :: Rational -> Bar -> Music (Pitch, Volume)
-interpretBar time (Bar _ aStr eStr cStr gStr) =
-  h aStr :=: h eStr :=: h cStr :=: h gStr
+interpretBar :: Tuning -> Rational -> Bar -> Music (Pitch, Volume)
+interpretBar tuning time (Bar _ aStr eStr cStr gStr) =
+  h aStr aAp :=: h eStr eAp:=: h cStr cAp:=: h gStr gAp
   where
-    h notes = addVolume 100 $ interpretString time notes
+    h notes ap = addVolume 100 $ interpretString ap time notes
+    (aAp, eAp, cAp, gAp) = tuning
 
-interpretString :: Rational -> [Uke.Note] -> Music Pitch
-interpretString time notes = _
+interpretString :: AbsPitch -> Rational -> [Uke.Note] -> Music Pitch
+interpretString ap time notes = _
