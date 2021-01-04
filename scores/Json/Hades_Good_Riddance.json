@@ -5,7 +5,7 @@
   ],
   "sections": [
       { "text": "Chords: Am Bb Cm Db Eb Fm G7 Gm" },
-      { "text": "Main Theme" },
+      { "text": "Intro and Main Theme" },
       { "tempo": 152,
 	"timeNumerator": 4,
 	"timeDenominator": 4,
@@ -48,7 +48,7 @@
 	    }
 	]
       },
-      { "text": "Main Theme (Variation)" },
+      { "text": "Main Theme Variation" },
       { "tempo": 152,
 	"timeNumerator": 4,
 	"timeDenominator": 4,
@@ -94,6 +94,193 @@
 	      "e": [4],
 	      "c": [2, [5, 1, null], 1],
 	      "g": [[3, 2, null], 1, [3, 1, null]]
+	    },
+	    { "barChord": "Bb",
+	      "a": [1, [5, 1, null], 2],
+	      "e": [4],
+	      "c": [[5, 1, null], 1, [5, 2, null]],
+	      "g": [4]
+	    },
+	    { "barChord": "Ab",
+	      "a": [[3, 2, null], 2],
+	      "e": [4],
+	      "c": [2, [3, 1, null], 1],
+	      "g": [[1, 2, null], 1, [1, 1, null]]
+	    },
+	    { "barChord": "Ab",
+	      "a": [1, [3, 1, null], 2],
+	      "e": [4],
+	      "c": [[3, 1, null], 1, [3, 2, null]],
+	      "g": [4]
+	    },
+	    { "barChord": "Gm",
+	      "a": [[1, 2, null], 2],
+	      "e": [4],
+	      "c": [2, [2, 1, null], 1],
+	      "g": [[0, 2, null], 1, [0, 1, null]]
+	    },
+	    { "barChord": "Gm",
+	      "a": [1, [1, 1, null], 2],
+	      "e": [4],
+	      "c": [[2, 1, null], 1, [2, 2, null]],
+	      "g": [4]
+	    },
+	    { "barChord": "Ab",
+	      "a": [[3, 2, null], 2],
+	      "e": [4],
+	      "c": [2, [3, 1, null], 1],
+	      "g": [[1, 2, null], 1, [1, 1, null]]
+	    },
+	    { "barChord": "Ab",
+	      "a": [1, [3, 1, null], 2],
+	      "e": [4],
+	      "c": [[3, 1, null], 1, [3, 1, null], 1],
+	      "g": [3, [1, 1, null]]
+	    },
+	    { "barChord": "G7/F",
+	      "a": [2, [10, 1, null], 1],
+	      "e": [4],
+	      "c": [1, [11, 1, null], 1, [11, 1, null]],
+	      "g": [[10, 1, null], 3]
+	    },
+	    { "barChord": "G7/F",
+	      "a": [2, [10, 1, null], 1],
+	      "e": [4],
+	      "c": [1, [11, 1, null], 1, [11, 1, null]],
+	      "g": [[10, 1, null], 3]
+	    },
+	    { "barChord": "G7/F",
+	      "a": [2, [10, 1, null], 1],
+	      "e": [4],
+	      "c": [1, [11, 1, null], 1, [11, 1, null]],
+	      "g": [[10, 1, null], 3]
+	    },
+	    { "barChord": "G7/F",
+	      "a": [4],
+	      "e": [4],
+	      "c": [4],
+	      "g": [[10, 4, null]]
+	    }
+	]
+      },
+      { "text": "Bridge" },
+      { "tempo": 152,
+	"timeNumerator": 4,
+	"timeDenominator": 4,
+	"bars": [
+	    { "barChord": "Cm",
+	      "a": [2, [6, 1, null], 1],
+	      "e": [1, [3, 1, null], 2],
+	      "c": [4],
+	      "g": [[5, 1, null], 2, [5, 1, null]]
+	    },
+	    { "barChord": "Do",
+	      "a": [2, [8, 1, null], 1],
+	      "e": [1, [4, 1, null], 2],
+	      "c": [4],
+	      "g": [[7, 1, null], 2, [7, 1, null]]
+	    },
+	    { "barChord": "Eb",
+	      "a": [2, [10, 1, null], 1],
+	      "e": [1, [6, 1, null], 2],
+	      "c": [4],
+	      "g": [[8, 1, null], 2, [8, 1, null]]
+	    },
+	    { "barChord": "Do",
+	      "a": [2, [8, 1, null], 1],
+	      "e": [1, [4, 1, null], 2],
+	      "c": [4],
+	      "g": [[7, 1, null], 2, [7, 1, null]]
+	    },
+	    { "barChord": "Cm",
+	      "a": [2, [6, 1, null], 1],
+	      "e": [1, [3, 1, null], 2],
+	      "c": [4],
+	      "g": [[5, 1, null], 2, [5, 1, null]]
+	    },
+	    { "barChord": "Do",
+	      "a": [2, [8, 1, null], 1],
+	      "e": [1, [4, 1, null], 2],
+	      "c": [4],
+	      "g": [[7, 1, null], 2, [7, 1, null]]
+	    },
+	    { "barChord": "Eb",
+	      "a": [2, [10, 1, null], 1],
+	      "e": [1, [6, 1, null], 2],
+	      "c": [4],
+	      "g": [[8, 1, null], 2, [8, 1, null]]
+	    },
+	    { "barChord": "Do",
+	      "a": [2, [8, 1, null], 1],
+	      "e": [1, [4, 1, null], 2],
+	      "c": [4],
+	      "g": [[7, 1, null], 2, [7, 1, null]]
+	    },
+	    { "barChord": "Cm",
+	      "a": [2, [6, 1, null], 1],
+	      "e": [1, [3, 1, null], 2],
+	      "c": [4],
+	      "g": [[5, 1, null], 2, [5, 1, null]]
+	    },
+	    { "barChord": "Do",
+	      "a": [2, [8, 1, null], 1],
+	      "e": [1, [4, 1, null], 2],
+	      "c": [4],
+	      "g": [[7, 1, null], 2, [7, 1, null]]
+	    },
+	    { "barChord": "Eb",
+	      "a": [2, [10, 1, null], 1],
+	      "e": [1, [6, 1, null], 2],
+	      "c": [4],
+	      "g": [[8, 1, null], 2, [8, 1, null]]
+	    },
+	    { "barChord": "Do",
+	      "a": [2, [8, 1, null], 1],
+	      "e": [1, [4, 1, null], 2],
+	      "c": [4],
+	      "g": [[7, 1, null], 2, [7, 1, null]]
+	    },
+	    { "barChord": "Cm",
+	      "a": [2, [6, 1, null], 1],
+	      "e": [1, [3, 1, null], 2],
+	      "c": [4],
+	      "g": [[5, 1, null], 2, [5, 1, null]]
+	    },
+	    { "barChord": "Do",
+	      "a": [2, [8, 1, null], 1],
+	      "e": [1, [4, 1, null], 2],
+	      "c": [4],
+	      "g": [[7, 1, null], 2, [7, 1, null]]
+	    },
+	    { "barChord": "Eb",
+	      "a": [2, [10, 1, null], 1],
+	      "e": [1, [6, 1, null], 2],
+	      "c": [4],
+	      "g": [[8, 1, null], 2, [8, 1, null]]
+	    },
+	    { "barChord": "Bo",
+	      "a": [2, [5, 1, null], 1],
+	      "e": [4],
+	      "c": [1, [5, 1, null], 1, [5, 1, null]],
+	      "g": [[4, 1, null], 3]
+	    },
+	    { "barChord": "Bo",
+	      "a": [2, [5, 1, null], 1],
+	      "e": [4],
+	      "c": [1, [5, 1, null], 1, [5, 1, null]],
+	      "g": [[4, 1, null], 3]
+	    },
+	    { "barChord": "Bo",
+	      "a": [2, [5, 1, null], 1],
+	      "e": [4],
+	      "c": [1, [5, 1, null], 1, [5, 1, null]],
+	      "g": [[4, 1, null], 3]
+	    },
+	    { "barChord": "Bo",
+	      "a": [4],
+	      "e": [4],
+	      "c": [4],
+	      "g": [[4, 4, null]]
 	    }
 	]
       }
