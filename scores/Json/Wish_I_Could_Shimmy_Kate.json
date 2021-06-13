@@ -1,0 +1,57 @@
+{ "title": "I Wish I Could Shimmy Like My Sister Kate",
+  "attributions": [
+      "https://www.youtube.com/watch?v=rkk9CXQ1AZU"
+  ],
+  "sections": [
+      { "text": "Chords: C6 C#maj G6 E7 A9 HawD7 G" },
+      { "text": "Part 1" },
+      { "tempo": null,
+	"timeNumerator": 4,
+	"timeDenominator": 4,
+	"bars": [
+	    { "barChord": "C6",
+	      "a": [[0, 2, null], [0, 1, null], [0, 1, null]],
+	      "e": [[0, 2, null], [0, 1, null], [0, 1, null]],
+	      "c": [[0, 2, null], [0, 1, null], [0, 1, null]],
+	      "g": [[0, 2, null], [0, 1, null], [0, 1, null]]
+	    },
+            { "barChord": "C6",
+	      "a": [[1, 2, null], [1, 1, null], [1, 1, null]],
+	      "e": [[0, 2, null], [0, 1, null], [0, 1, null]],
+	      "c": [[1, 2, null], [1, 1, null], [1, 1, null]],
+	      "g": [[0, 2, null], [0, 1, null], [0, 1, null]]
+            },
+            { "barChord": "G6 / E7",
+	      "a": [[2, 1, null], [2, 1, null], [2, 1, null], [2, 1, null]],
+	      "e": [[0, 1, null], [0, 1, null], [0, 1, null], [0, 1, null]],
+	      "c": [[2, 1, null], [2, 1, null], [2, 1, null], [2, 1, null]],
+	      "g": [[0, 1, null], [0, 1, null], [0, 1, null], [1, 1, null]]
+            },
+            { "barChord": "E7",
+	      "a": [2, [2, 1, null], [2, 1, null]],
+	      "e": [2, [0, 1, null], [0, 1, null]],
+	      "c": [2, [2, 1, null], [2, 1, null]],
+	      "g": [2, [1, 1, null], [1, 1, null]]
+            },
+            { "barChord": "A9",
+	      "a": [[2, 2, null], [2, 1, null], [2, 1, null]],
+	      "e": [[0, 2, null], [0, 1, null], [0, 1, null]],
+	      "c": [[1, 2, null], [1, 1, null], [1, 1, null]],
+	      "g": [[0, 2, null], [0, 1, null], [0, 1, null]]
+            },
+            { "barChord": "HawD7",
+	      "a": [[0, 2, null], [0, 1, null], [0, 1, null]],
+	      "e": [[2, 2, null], [2, 1, null], [2, 1, null]],
+	      "c": [[0, 2, null], [0, 1, null], [0, 1, null]],
+	      "g": [[2, 2, null], [2, 1, null], [2, 1, null]]
+            },
+            { "barChord": "G",
+	      "a": [[2, 1, null], 1, [0, 1, null], [2, 5, null]],
+	      "e": [[3, 1, null], 1, [0, 1, null], [3, 5, null]],
+	      "c": [[2, 1, null], 1, [0, 1, null], [2, 5, null]],
+	      "g": [[0, 1, null], 1, [0, 1, null], [0, 5, null]]
+            }
+        ]
+      }
+  ]
+}
